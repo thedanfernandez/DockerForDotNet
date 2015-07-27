@@ -1,0 +1,14 @@
+﻿@model System.Collections.IDictionary
+
+@{
+    ViewBag.Title = "Home Page";
+}
+
+From Redis: @ViewBag.Message
+
+<ul>
+    @foreach (var item in Model.Keys)
+    {
+        <li><strong>@item</strong> : @Model[item]</li>
+    }
+</ul>

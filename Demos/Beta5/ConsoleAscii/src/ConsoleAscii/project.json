@@ -1,0 +1,21 @@
+﻿{
+  "version": "1.0.0-*",
+  "description": "ConsoleAscii Console Application",
+  "authors": [ "danielfe" ],
+  "tags": [ "" ],
+  "projectUrl": "",
+  "licenseUrl": "",
+
+  "dependencies": {
+    "System.Diagnostics.Tracing": "4.0.20-beta-23019"
+
+  },
+
+  "commands": {
+    "ConsoleAscii": "ConsoleAscii"
+  },
+
+  "frameworks": {
+    "dnx451": { }
+  }
+}

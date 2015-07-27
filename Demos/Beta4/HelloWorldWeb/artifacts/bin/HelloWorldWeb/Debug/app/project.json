@@ -1,0 +1,40 @@
+{
+  "webroot": "wwwroot",
+  "userSecretsId": "aspnet5-HelloWorldWeb-59bdd81d-50bc-4d3a-b764-17ff4f2c8f1f",
+  "version": "1.0.0-*",
+  "dependencies": {
+    "HelloWorldWeb": "1.0.0"
+  },
+  "commands": {
+    "web": "Microsoft.AspNet.Hosting --server Microsoft.AspNet.Server.WebListener --server.urls http://localhost:5000",
+    "gen": "Microsoft.Framework.CodeGeneration",
+    "ef": "EntityFramework.Commands"
+  },
+  "frameworks": {
+    "dnx451": {},
+    "dnxcore50": {}
+  },
+  "exclude": [
+    "wwwroot",
+    "node_modules",
+    "bower_components"
+  ],
+  "publishExclude": [
+    "node_modules",
+    "bower_components",
+    "**.xproj",
+    "**.user",
+    "**.vspscc"
+  ],
+  "scripts": {
+    "postrestore": [
+      "npm install",
+      "bower install"
+    ],
+    "prepare": [
+      "gulp copy"
+    ]
+  },
+  "entryPoint": "HelloWorldWeb",
+  "loadable": false
+}

@@ -1,0 +1,24 @@
+﻿{
+  "version": "1.0.0-*",
+  "description": "",
+  "authors": [ "" ],
+  "tags": [ "" ],
+  "projectUrl": "",
+  "licenseUrl": "",
+
+  "dependencies": {
+    "System.Diagnostics.Tracing": "4.0.20-beta-22807",
+    "System.Diagnostics.Process": "4.0.0"
+
+  },
+
+  "commands": {
+    "ConsoleAscii": "ConsoleAscii"
+  },
+
+  "frameworks": {
+    "dnx451": { }
+  }
+
+}
+
