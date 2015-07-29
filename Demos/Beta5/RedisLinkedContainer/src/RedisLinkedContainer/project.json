@@ -14,11 +14,13 @@
         "Microsoft.Framework.Logging": "1.0.0-beta5",
         "Microsoft.Framework.Logging.Console": "1.0.0-beta5",
         "Microsoft.VisualStudio.Web.BrowserLink.Loader": "14.0.0-beta5",
-        "ServiceStack.Redis": "4.0.42"
+        "ServiceStack.Redis": "4.0.42",
+        "Kestrel": "1.0.0-beta5"
     },
 
     "commands": {
-        "web": "Microsoft.AspNet.Hosting --config hosting.ini"
+        "web": "Microsoft.AspNet.Hosting --config hosting.ini",
+        "kestrel": "Microsoft.AspNet.Hosting --server Kestrel --config hosting.ini"
     },
 
     "frameworks": {

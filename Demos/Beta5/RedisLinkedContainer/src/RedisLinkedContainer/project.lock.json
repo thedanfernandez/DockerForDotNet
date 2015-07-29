@@ -3,6 +3,24 @@
   "version": -9996,
   "targets": {
     "DNX,Version=v4.5.1": {
+      "Kestrel/1.0.0-beta5": {
+        "dependencies": {
+          "Microsoft.AspNet.Hosting": "1.0.0-beta5",
+          "Microsoft.AspNet.Server.Kestrel": "1.0.0-beta5"
+        },
+        "frameworkAssemblies": [
+          "mscorlib",
+          "System",
+          "System.Core",
+          "Microsoft.CSharp"
+        ],
+        "compile": {
+          "lib/dnx451/Kestrel.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Kestrel.dll": {}
+        }
+      },
       "Microsoft.AspNet.Authentication/1.0.0-beta5": {
         "dependencies": {
           "Microsoft.AspNet.DataProtection": "1.0.0-beta5",
@@ -626,6 +644,23 @@
           "Microsoft.AspNet.Loader.IIS": "1.0.0-beta5"
         }
       },
+      "Microsoft.AspNet.Server.Kestrel/1.0.0-beta5": {
+        "dependencies": {
+          "Microsoft.Framework.Runtime.Abstractions": "1.0.0-beta5"
+        },
+        "frameworkAssemblies": [
+          "mscorlib",
+          "System",
+          "System.Core",
+          "Microsoft.CSharp"
+        ],
+        "compile": {
+          "lib/dnx451/Microsoft.AspNet.Server.Kestrel.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Microsoft.AspNet.Server.Kestrel.dll": {}
+        }
+      },
       "Microsoft.AspNet.Server.WebListener/1.0.0-beta5": {
         "dependencies": {
           "Microsoft.AspNet.Http.Features": "1.0.0-beta5",
@@ -1214,6 +1249,19 @@
     }
   },
   "libraries": {
+    "Kestrel/1.0.0-beta5": {
+      "serviceable": true,
+      "sha512": "rFC89oqyntN0Z/ACBjYKaogIom3eW6YI8fFFw9ou2KWSSpDY1PCua4D/PDx4N2oYBhgFjBX4GyJmRZ/1L3n9Pw==",
+      "files": [
+        "Kestrel.1.0.0-beta5.nupkg",
+        "Kestrel.1.0.0-beta5.nupkg.sha512",
+        "Kestrel.nuspec",
+        "lib/dnx451/Kestrel.dll",
+        "lib/dnx451/Kestrel.xml",
+        "lib/dnxcore50/Kestrel.dll",
+        "lib/dnxcore50/Kestrel.xml"
+      ]
+    },
     "Microsoft.AspNet.Authentication/1.0.0-beta5": {
       "serviceable": true,
       "sha512": "0aGfwSmbVHhNIQSp6dXqz6sLYD07U9Dgnw8rm/wnQDkLFfJ9iPQKBBTk/Oh/6wGwaSg9Ko7mzXTwILE42HZdZA==",
@@ -1664,6 +1712,22 @@
         "Microsoft.AspNet.Server.IIS.nuspec"
       ]
     },
+    "Microsoft.AspNet.Server.Kestrel/1.0.0-beta5": {
+      "serviceable": true,
+      "sha512": "JDebwt15z3QyFAQEqEiYNDUu9mDymOTfFip5KC4+0ou5YHi6AGlcT5mxQD+YuIkcI9/0Ck9mFWOL0tKEgwjCSQ==",
+      "files": [
+        "Microsoft.AspNet.Server.Kestrel.1.0.0-beta5.nupkg",
+        "Microsoft.AspNet.Server.Kestrel.1.0.0-beta5.nupkg.sha512",
+        "Microsoft.AspNet.Server.Kestrel.nuspec",
+        "lib/dnx451/Microsoft.AspNet.Server.Kestrel.dll",
+        "lib/dnx451/Microsoft.AspNet.Server.Kestrel.xml",
+        "lib/dnxcore50/Microsoft.AspNet.Server.Kestrel.dll",
+        "lib/dnxcore50/Microsoft.AspNet.Server.Kestrel.xml",
+        "native/darwin/universal/libuv.dylib",
+        "native/windows/amd64/libuv.dll",
+        "native/windows/x86/libuv.dll"
+      ]
+    },
     "Microsoft.AspNet.Server.WebListener/1.0.0-beta5": {
       "serviceable": true,
       "sha512": "5wJEiGFsjV1FudzrVQfJ/Pmbk7KS6718Iy9u0572MAg6JdCMpodzEvquCw9udXN2vzVy61SMps4KZfurBfAqFQ==",
@@ -2110,7 +2174,7 @@
       ]
     },
     "Microsoft.VisualStudio.Web.BrowserLink.Loader/14.0.0-beta5": {
-      "sha512": "pjMULY/YP+YM/iE2pKz3WiPF/4G02NdYThO0ATjGi6XwPeaPlqKvsWXlyt6QRqbYcEhhctoeU5ngX1HlTjtzzQ==",
+      "sha512": "+kRW3w1tNWQTOLJ78qBJS64Pvt9APzq17XS0liHcl01z3JYnDK5MAh1TCdPcY5RL9vI09/CLeDplq4iMrPS3/g==",
       "files": [
         "Microsoft.VisualStudio.Web.BrowserLink.Loader.14.0.0-beta5.nupkg",
         "Microsoft.VisualStudio.Web.BrowserLink.Loader.14.0.0-beta5.nupkg.sha512",
@@ -2222,7 +2286,8 @@
       "Microsoft.Framework.Logging >= 1.0.0-beta5",
       "Microsoft.Framework.Logging.Console >= 1.0.0-beta5",
       "Microsoft.VisualStudio.Web.BrowserLink.Loader >= 14.0.0-beta5",
-      "ServiceStack.Redis >= 4.0.42"
+      "ServiceStack.Redis >= 4.0.42",
+      "Kestrel >= 1.0.0-beta5"
     ],
     "DNX,Version=v4.5.1": []
   }

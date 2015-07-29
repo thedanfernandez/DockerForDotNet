@@ -16,16 +16,22 @@ namespace RedisLinkedContainer.Controllers
 
             string db = Environment.GetEnvironmentVariable("REDIS_PORT_6379_TCP_ADDR");
 
-            //Pull to show count
-            using (RedisClient client = new RedisClient(db))
+            if (!string.IsNullOrEmpty(db))
             {
-                client.Set<string>(key, "Hello World from Redis!");
+                //Pull to show count
+                using (RedisClient client = new RedisClient(db))
+                {
+                    client.Set<string>(key, "Hello World from Redis!");
 
-                string x = client.Get<string>(key);
+                    string x = client.Get<string>(key);
 
-                ViewBag.Message = x;
+                    ViewBag.Message = x;
+
+                }
 
             }
+
+
 
             //Return Dictionary of all environment variables
             var all = Environment.GetEnvironmentVariables();
