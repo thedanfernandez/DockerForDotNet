@@ -1,5 +1,8 @@
 web:
-    build: .
+    image: "redislinkedcontainer"
+    
+    environment:
+        - "server.urls=http://localhost:80"
     
     ports:
         - "80:80"
@@ -7,4 +10,4 @@ web:
         - redis
 redis:
     image: "redis"
-
+    
